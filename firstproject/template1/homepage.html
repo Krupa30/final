@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load staticfiles %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>First Home</title>
+</head>
+<body>
+
+<form method="post" >
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" style="margin:30px" >HOME</button>
+    <button type="submit" style="margin:30px"  >ABOUT</button>
+    <button type="submit" style="margin:30px">GALLERY</button>
+    <button type="submit" style="margin:30px" >LOGIN</button>
+    <button type="submit" style="margin:30px" >SIGNUP</button>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <P align="left"><H2>THIS IS MY HOMEPAGE<H2></H2></P>
+    <img src="{% static "images\IMG.jpg " %}" align="right" height=350px width=350px/>
+    <p align="bottom" >created by:krupa naik</p>
+
+
+</form>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>First form</title>
+</head>
+<body>
+<h1 align="center">Signup</h1>
+<form method="post" >
+    {% csrf_token %}
+    {{ form.as_p }}
+<form>
+<table width="20%"  align="left">
+
+
+<tr align="left" >
+<td>Name:</td>
+<td><input type="text" size=50 name="name" align="left" ></td>
+</tr>
+
+<tr>
+<td>Email:</td>
+<td><input type="text" size=50 name="email" align="left"></td>
+</tr>
+
+<tr>
+<td>Password</td>
+<td><input type="text" size=50 name="pwd" align="left"></td>
+</tr>
+<tr>
+
+<td><input type="submit"></td>
+</tr>
+
+</table>
+
+
+</form>
+{% endblock %}
+</body>
+</html>

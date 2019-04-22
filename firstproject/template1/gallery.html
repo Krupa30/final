@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GALLERY</title>
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 28%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<body>
+<div class="row">
+  <div class="column">
+   <img src="{% static "images\IMG3.jpg" %}" style="width:80%">
+  </div>
+     <div class="column">
+   <img src="{% static "images\IMG4.jpg" %}" style="width:80%">
+  </div>
+     <div class="column">
+   <img src="{% static "images\IMG5.jpg" %}" style="width:80%">
+  </div>
+</div>
+    <div class="row">
+    <div class="column">
+        <img src="{% static "images\IMG6.jpg" %}" style="width:80%">
+    </div>
+    <div class="column">
+        <img src="{% static "images\IMG7.jpg" %}" style="width:80%">
+    </div>
+     <div class="column">
+        <img src="{% static "images\IMG8.jpg" %}" style="width:80%">
+    </div>
+
+</div>
+
+</body>
+</html>
